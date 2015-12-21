@@ -1,0 +1,21 @@
+{{ partial "head.html" .}}
+{{ partial "header.html" .}}
+{{ partial "blog-header.html" . }}
+
+<article>
+  <header>
+
+    {{ partial "date.html" . }}
+    
+    <h2>{{.Title}}</h2>
+
+  </header>
+  
+  <section itemprop="entry-text">
+    {{ .Content }}
+  </section>
+  
+</article>
+
+{{ partial "blog-footer.html" .}}
+{{ partial "footer.html" .}}

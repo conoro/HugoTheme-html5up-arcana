@@ -1,0 +1,17 @@
+<!-- Header -->
+<div id="header">  
+  <!-- Logo -->
+  <h1>
+    <a href="{{.Site.BaseURL}}/index.html" id="logo">
+      {{.Site.Title}}
+      {{if .IsNode}}
+      {{if ne .Site.Title .Title}}
+      - {{title .Title}}
+      {{end}}
+      {{else}}
+      - {{title .Section}}
+      {{end}}
+    </a>
+  </h1>
+  {{ partial "menu.html" .}}
+</div>

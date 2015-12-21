@@ -1,0 +1,40 @@
+{{ partial "head.html" .}}
+{{ partial "header.html" .}}
+{{ partial "contest-header.html" .}}
+
+<article>
+  <header>
+    {{ partial "date.html" . }}
+
+    <h2>{{.Title}}</h2>
+
+  </header>
+  
+  <section itemprop="entry-text">
+    {{ .Content }}
+  </section>
+
+  <br>
+  
+  <div>
+    <span style="padding: 10px; margin: 10px; border: 0.5px dashed #333333;">
+      Status : <em>{{ .Status }}</em>
+    </span>    
+    <span style="padding: 10px; margin: 10px; border: 0.5px dashed #333333;">
+      Contest :
+      <a href="/contests/{{ .Params.contests }}/"> {{ .Params.contests }} </a>
+    </span>
+
+    <span style="padding: 10px; margin: 10px; border: 0.5px dashed #333333;">
+      Type :
+      {{range .Params.problemtypes}}
+      <a href="/problemtypes/{{ . }}/"> #{{ . }} </a>
+      {{end}}
+    </span>
+  </div>
+  
+</article>
+
+{{ partial "contest-footer.html" .}}
+{{ partial "footer.html" .}}
+
