@@ -13,7 +13,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/css/main.css">
-    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@cormoran707" />
+    {{ if .IsPage}}
+    <meta name="twitter:title" content="{{.Title}} - {{ .Site.Title }}" />
+    <meta name="twitter:description" content="{{ .Summary }}" />
+    {{ end }}
   </head>
   <body>
     <div id="page-wrapper">
