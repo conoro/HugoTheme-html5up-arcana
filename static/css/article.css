@@ -4,6 +4,12 @@ code.has-jax {font: inherit;
               border: inherit;
               color: #515151;}
 
+.article header p {
+    margin-bottom : 0.5em;
+    font-size: 1em;
+    text-align: center;
+}
+
 .article h1 {
     font-size: 2em;
 }
@@ -36,10 +42,19 @@ code.has-jax {font: inherit;
     font-weight: 100;    
     line-height: 1.25em;    
     font-family: Consolas, Menlo, 'Liberation Mono', Courier, monospace;
+    margin-bottom : 2em;
 }
-
+/*
 #content ul {
-    padding : 0;
-    margin: 0;
+/   padding : 0;
+/   margin: 0;
 }
-
+*/
+.menu {
+    margin: 0;
+    padding: 0;
+}
+.list {
+    margin: 0;
+    padding: 0;
+}

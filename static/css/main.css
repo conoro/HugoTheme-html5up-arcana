@@ -48,9 +48,9 @@ table {
     border-spacing: 0;
 }
 
-table, td, th {
-    border: 1px black solid;
-}
+/* table, td, th { */
+/*     border: 1px black solid; */
+/* } */
 
 body {
     -webkit-text-size-adjust: none;
